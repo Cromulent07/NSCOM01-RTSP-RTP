@@ -12,13 +12,8 @@ class RtpPacket:
 		"""Encode the RTP packet with header fields and payload."""
 		timestamp = int(time())
 		header = bytearray(HEADER_SIZE)
-		#--------------
-		# TO COMPLETE
-		#--------------
 		# Fill the header bytearray with RTP header fields
 		
-		# header[0] = ...
-		# ...
 		header[0] = version << 6
 		header[0] = padding << 5
 		header[0] = extension << 4
@@ -38,7 +33,6 @@ class RtpPacket:
 		self.header = header
 
 		# Get the payload from the argument
-		# self.payload = ...
 		self.payload = payload
 		
 	def decode(self, byteStream):

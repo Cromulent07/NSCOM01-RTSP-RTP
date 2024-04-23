@@ -1,0 +1,2 @@
+start cmd /k "Scripts\activate && title Server && python server\Server.py 1234"
+start cmd /k "Scripts\activate && title Client && python client\ClientLauncher.py 127.0.0.1 1234 1235 shared\movie.Mjpeg"

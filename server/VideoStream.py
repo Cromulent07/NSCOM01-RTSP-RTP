@@ -22,4 +22,3 @@ class VideoStream:
 		"""Get frame number."""
 		return self.frameNum
 	
-	
